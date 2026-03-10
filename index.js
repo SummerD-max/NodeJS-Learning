@@ -7,8 +7,8 @@ let telRecords = [
   {
     id: "1",
     name: "Arto Hellas",
-    number: "040-123456",
-  },·
+    number: "040-123456111111",
+  },
   {
     id: "2",
     name: "Ada Lovelace",
