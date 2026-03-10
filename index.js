@@ -8,6 +8,7 @@ let telRecords = [
     id: "1",
     name: "Arto Hellas",
     number: "040-123456111111",
+    date: new Date(),
   },
   {
     id: "2",
