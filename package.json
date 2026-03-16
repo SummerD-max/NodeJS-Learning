@@ -14,5 +14,10 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
   }
 }
