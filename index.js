@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const dayjs = require("dayjs");
 const app = express();
 
 app.use(express.json());
@@ -29,13 +30,14 @@ app.get("/api/notes", (request, response) => {
 
 app.post("/api/notes", (request, response) => {
   const body = request.body;
-  notes.push({
+  const newNote = {
     ...body,
     id: notes.length + 1,
-    important: false,
-    date: new Date().toISOString("YYYY-MM-DD"),
-  });
-  response.json(body);
+    date: dayjs().format("YYYY-MM-DD"),
+  };
+  notes.push(newNote);
+  response.json(newNote);
+  console.log(notes);
 });
 
 app.put("/api/notes/:id", (request, response) => {
